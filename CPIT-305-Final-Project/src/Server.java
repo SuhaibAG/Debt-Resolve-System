@@ -36,14 +36,7 @@ class myThread extends Thread {
 
     @Override
     public void run() {
-        String url = "jdbc:sqlserver://project305database.database.windows.net:1433;" +
-                "database=database-cpit305;" +
-                "user=Saud@project305database;" +
-                "password=Duzu26\\5;" +
-                "encrypt=true;" +
-                "trustServerCertificate=false;" +
-                "hostNameInCertificate=*.database.windows.net;" +
-                "loginTimeout=15;";
+        String url = ""
 
         System.out.println("Client connect via: " + client.getInetAddress().getHostAddress());
         try(Connection con = DriverManager.getConnection(url);
